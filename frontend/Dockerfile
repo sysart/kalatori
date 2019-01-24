@@ -1,16 +1,16 @@
-FROM node:9.2.0
+# FROM node:9.2.0
 
-RUN mkdir /src
+# RUN mkdir /src
 
-RUN npm install yarn -g
+# RUN npm install yarn -g
 
-WORKDIR /src
+# WORKDIR /src
 
-ADD package.json /src/package.json
+# ADD package.json /src/package.json
 
-RUN npm install
+# RUN npm install
 
-EXPOSE 3000
+# EXPOSE 3000
 
 
-CMD yarn start
+# CMD yarn start

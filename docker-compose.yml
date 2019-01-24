@@ -12,18 +12,17 @@ services:
     ports:
       - "4000:3000"
 
-
-  frontend:
-    build: ./frontend
-    links:
-      - server
-    depends_on:
-      - server
-    volumes:
-      - "./frontend/src:/src/src"
-      - "./frontend/public:/src/public"
-    ports:
-      - "3000:3000"
+  # frontend:
+  #   build: ./frontend
+  #   links:
+  #     - server
+  #   depends_on:
+  #     - server
+  #   volumes:
+  #     - "./frontend/src:/src/src"
+  #     - "./frontend/public:/src/public"
+  #   ports:
+  #     - "3000:3000"
 
   fake-services:
     build: ./fake-services
