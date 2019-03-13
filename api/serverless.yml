@@ -1,0 +1,12 @@
+service: aws-nodejs # NOTE: update this with your service name
+provider:
+  name: aws
+  runtime: nodejs8.10
+  region: eu-north-1
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - http:
+          path: location/list
+          method: get
